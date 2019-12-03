@@ -5,4 +5,5 @@
   <input type="text" [(ngModel)]="name">
   <input type="number" [(ngModel)]='age'>
 </div>
-<app-child [userName]='name' [userAge]='age'></app-child>
+<h2>Количество кликов {{clicks}}</h2>
+<app-child [userName]='name' [userAge]='age' (onChanged)='onChanged($event)'></app-child>
