@@ -2,7 +2,7 @@
   <h2>
     Добро пожаловать, {{name}}
   </h2>
-  <input type="text" [value]="name">
-  <input type="text" [(ngModel)]='name'>
+  <input type="text" [(ngModel)]="name">
+  <input type="number" [(ngModel)]='age'>
 </div>
-<app-child></app-child>
+<app-child [userName]='name' [userAge]='age'></app-child>
