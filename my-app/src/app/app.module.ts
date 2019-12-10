@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 
 import {FormsModule} from "@angular/forms";
 import { ChildComponent } from './child/child.component';
+import { HomeComponent } from './route/home/home.component';
+import { AboutComponent } from './route/about/about.component';
+import { NotFoundComponent } from './route/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent
+    ChildComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
     FormsModule,
