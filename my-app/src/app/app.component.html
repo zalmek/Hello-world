@@ -14,9 +14,9 @@
     </li>
     <li routerLinkActive='active'><a routerLink='/about'>О сайте </a>
     </li>
-    <li routerLinkActive='active'><a [routerLink]='["item","5"]'>Item 5 </a>
+    <li routerLinkActive='active'><a [routerLink]='["item","5"]' [queryParams]="{'product':'phone','price':'200'}">Item 5 </a>
     </li>
-    <li routerLinkActive='active'><a [routerLink]='["item","8"]'>Item8 </a>
+    <li routerLinkActive='active'><a [routerLink]='["item","8"]' [queryParams]="{'product':'tablet','price':'1000'}">Item8 </a>
     </li>
     </ul>
   <h3>Router  </h3>
