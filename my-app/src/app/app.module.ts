@@ -10,6 +10,8 @@ import { HomeComponent } from './route/home/home.component';
 import { AboutComponent } from './route/about/about.component';
 import { NotFoundComponent } from './route/not-found/not-found.component';
 import { ItemComponent } from './route/item/item.component';
+import { ItemDetailsComponent } from './route/item/item-details/item-details.component';
+import { ItemStatComponent } from './route/item/item-stat/item-stat.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ItemComponent } from './route/item/item.component';
     HomeComponent,
     AboutComponent,
     NotFoundComponent,
-    ItemComponent
+    ItemComponent,
+    ItemDetailsComponent,
+    ItemStatComponent
   ],
   imports: [
     FormsModule,

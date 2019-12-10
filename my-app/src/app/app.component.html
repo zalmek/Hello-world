@@ -18,6 +18,10 @@
     </li>
     <li routerLinkActive='active'><a [routerLink]='["item","8"]' [queryParams]="{'product':'tablet','price':'1000'}">Item8 </a>
     </li>
+    <li routerLinkActive='active'><a [routerLink]='["item","8","details"]' [queryParams]="{'product':'tablet','price':'1000'}">details </a>
+    </li>
+    <li routerLinkActive='active'><a [routerLink]='["item","8","stat"]' [queryParams]="{'product':'tablet','price':'1000'}">Stat </a>
+    </li>
     </ul>
   <h3>Router  </h3>
   <router-outlet></router-outlet>
