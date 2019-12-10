@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,10 @@ export class AppComponent {
   age : number = 23
   name:string= 'place'
   title = 'my-app'
+  constructor(private router: Router) {}
+  GoHome(){
+    this.router.navigate([''])
+  }
   onChanged(increased){
     if(increased){
       this.clicks=this.clicks+1
@@ -20,4 +25,3 @@ this.clicks=this.clicks-1
     }
   }
 }
-  
