@@ -1,0 +1,9 @@
+.active{
+    color: brown;
+}
+.nav{
+    clear: both;
+}
+a{
+    float: left;
+}

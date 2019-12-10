@@ -8,6 +8,13 @@
 <h2>Количество кликов {{clicks}}</h2>
 <app-child ([userName])='name' [userAge]='age' (onChanged)='onChanged($event)'></app-child>
 <div>
+  <ul class="nav">
+    <li
+     routerLinkActive='active' [routerLinkActiveOptions]='{exact:true}'><a routerLink=''>Главная</a> <br>
+    </li>
+    <li routerLinkActive='active'><a routerLink='/about'>О сайте </a>
+    </li>
+    </ul>
   <h3>Router  </h3>
   <router-outlet></router-outlet>
 </div>
