@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+p{
+    color: chartreuse;
+    visibility: visible ;
+    border-color: black;
+    background-color:brown ;
+}
+div{
+    color: whitesmoke;
+}
+h1{
+    color: whitesmoke;
+}
+h2{
+    color: whitesmoke;
+}
+
+h3{
+    color: whitesmoke;
+}
+h4{
+    color: whitesmoke;
+}
+h5{
+    color: whitesmoke;
+}
