@@ -1,0 +1,13 @@
+<div>
+    <form (ngSubmit)="MakeLogin()">
+    <input type="text" placeholder='login' name='login' id='mainlog' [(ngModel)]="login">
+    <input type="text" placeholder='password' name='pass' id='passlog' [(ngModel)]="pass">
+    <input type="submit" value="submit">
+</form>
+    <h1 style="color: red;">YOU SHALL NOT PASS</h1>
+</div>
+<div *ngIf="entered">
+    <h1>
+Вы вошли
+    </h1>
+</div>

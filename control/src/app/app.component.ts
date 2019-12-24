@@ -10,6 +10,7 @@ export class AppComponent implements OnInit, OnChanges, DoCheck, AfterContentIni
   age: number = 23
   name: string = 'place'
   title = 'my-app'
+  n:number=1
   onChanged(changed) {
     if (changed) {
       this.clicks = this.clicks + 1
@@ -19,6 +20,10 @@ export class AppComponent implements OnInit, OnChanges, DoCheck, AfterContentIni
       this.clicks = this.clicks - 1
     }
   }
+ //if (clicks>25*n){
+  //  n+ 0,25
+  
+ // }
   ngOnInit() { console.log('Oninit'); }
   ngOnChanges() { console.log("OnInit"); }
   ngDoCheck() { console.log('DoCheck'); }
