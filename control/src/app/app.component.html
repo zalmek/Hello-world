@@ -1,0 +1,9 @@
+<div>
+  <h2>
+    Добро пожаловать, {{name}}
+  </h2>
+  <input type="text" [(ngModel)]="name">
+  <input type="number" [(ngModel)]='age'>
+</div>
+<h2>Количество кликов {{clicks}}</h2>
+<app-second [userName]='name' [userAge]='age' (onChanged)='onChanged($event)'></app-second>
