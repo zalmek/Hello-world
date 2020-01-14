@@ -1,13 +1,8 @@
-<div>
-    <form (ngSubmit)="MakeLogin()">
-    <input type="text" placeholder='login' name='login' id='mainlog' [(ngModel)]="login">
-    <input type="text" placeholder='password' name='pass' id='passlog' [(ngModel)]="pass">
+    <form (ngSubmit)="New_point()">
+    <input type="text" placeholder='City' name='City' id='Citylog' [(ngModel)]="City">
+    <input type="text" placeholder='Country' name='Country' id='Countrylog' [(ngModel)]="Country">
     <input type="submit" value="submit">
 </form>
-    <h1 style="color: red;">YOU SHALL NOT PASS</h1>
-</div>
-<div *ngIf="entered">
-    <h1>
-Вы вошли
-    </h1>
+<div *ngFor = "let item of elements" >
+City={{item.City}} Country={{item.Country}}
 </div>

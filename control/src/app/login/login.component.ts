@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { create } from 'domain';
 
 @Component({
   selector: 'app-login',
@@ -6,37 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  login: string
-  pass: string
-  entered = false
+  City: string;
+  Country: string;
+    entered = false;
+    elements = [];
+
   constructor() { }
 
   ngOnInit() {
-    this.login = 'admin1'
-    this.pass = 'qwerty'
+    this.elements=JSON.parse(localStorage.getItem("items"));
+    if (this.elements==null){
+      this.elements=[];
+    }
+    this.City = ''
+    this.Country = ''
   }
-  MakeLogin() {
-    console.log(this.login);
-    console.log(this.pass);
-
-    if (this.login == "admin" && this.pass == 'qwerty') {
-      console.log("You are in!!!")
-      this.entered = true
-    } else {
-      const pass = localStorage.getItem("pass");
-      const log = localStorage.getItem("login");
-      console.log(pass);
-      console.log(log);
-      
-      
-      if (pass == this.pass && log == this.login) {
-        this.entered = true;
-      } else {
-        this.entered = false;
-        localStorage.setItem("login", this.login)
-        localStorage.setItem("pass", this.pass)
-      }
+  New_point(){
+    this.elements.push({City:this.City,Country:this.Country});
+    localStorage.setItem("elements",JSON.stringify(this.elements));
     }
   }
-}
-

@@ -24,12 +24,12 @@ export class AppComponent implements OnInit, OnChanges, DoCheck, AfterContentIni
   //  n+ 0,25
   
  // }
-  ngOnInit() { console.log('Oninit'); }
-  ngOnChanges() { console.log("OnInit"); }
-  ngDoCheck() { console.log('DoCheck'); }
-  ngAfterContentInit() { console.log('AfterContentInit'); }
-  ngAfterContentChecked() { console.log('AfterContentChecked'); }
-  ngAfterViewInit() { console.log('AfterViewInit'); }
-  ngAfterViewChecked() { console.log('AfterViewChecked'); }
-  ngOnDestroy() { console.log('OnDestroy'); }
+  ngOnInit() { console.log(); }
+  ngOnChanges() { console.log(); }
+  ngDoCheck() { console.log(); }
+  ngAfterContentInit() { console.log(); }
+  ngAfterContentChecked() { console.log(); }
+  ngAfterViewInit() { console.log(); }
+  ngAfterViewChecked() { console.log(); }
+  ngOnDestroy() { console.log(); }
 }
